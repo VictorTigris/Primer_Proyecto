@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas de JavaScript</title>
+    <meta name="description" content="ESto solo es una página hilada a mi portal principal, donde juego con JavaScript">
+    <link rel="stylesheet" href="../../estiloNormalizad/normalizado.css">
+    <link rel="stylesheet" href="./styleDC1.css">
+</head>
+<body>
+
+<!--            SECCIÓN SLIDE                                 -->
+
+<div id="slide">
+    <img id="tiger" src="../../gifs/homer.gif" alt="Just a Tiger">
+</div>
+
+<!--            SECCIÓN SLIDE                                 -->
+<!--            SECCIÓN MATRIX                                 -->
+
+
+    <div id="cover">
+        <button id="playMe" onclick="pomptYes()">INÍCIAME</button>
+        <span id="hello"></span><br>
+        <span class="matrix"></span><br>
+        <div id="timerBox">
+            <p id="timer"></p>
+        </div>
+        <button id="escape"onclick="closed()">RÁPIDO</button>
+        <div id="ultimatum"></div>
+    </div>
+
+
+<!--            SECCIÓN MATRIX                                 -->
+
+    <div id="title">
+        <h1 class="pepe">JavaScript</h1>
+    </div>
+    <div id="decoration" ></div>
+
+<!--            SECCIÓN RANDOM                               -->
+
+<div class="playBox" id="randomNum">
+    <p>Hasta que no le des click, no se te asignará ningún número</p>
+    <span id="random"></span><span id="yourNumber"></span><br><br>
+    <button class="colorButton" id="randomButton" onclick="removeRandomNumber()">Dai Caña</button>
+</div>
+
+<!--            SECCIÓN RANDOM                               -->
+<!--            SECCIÓN SECRET                               -->
+
+<div class="playBox" id="secretNum">
+    <p>Hay un número secreto detrás de esta web</p>
+    <br>
+    <input type="text" id="secret">
+    <button class="colorButton" onclick="secretNumber()" id="secretButton">Prueba</button>
+    <p id="near"></p>
+</div>
+
+<!--            SECCIÓN SECRET                               -->
+<!--            SECCIÓN DANGER                               -->
+
+<div class="playBox" id="danger">
+    <p id="dangerSecret" >KABUM</p>
+    <p id="tip">Pregúntale a JavaScript si puede apagar la luz</p>
+    <input id="dangerWord" type="text" placeholder="Palabra de Seguridad"><br><br>
+    <button onclick="kabum()" id="dangerButton">PELIGRO</button>
+    <p id="solution"></p>
+</div>
+
+<!--            SECCIÓN DANGER                               -->
+
+<footer>
+    <a href="contacto.html">Reinicia</a>
+
+    <a href="../../index.html">Volver</a>
+</footer>
+    <script src="../../estiloNormalizad/typed.js"></script>
+    <script src="./cambioColorDC1.js"></script>
+</body>
+
+</html>

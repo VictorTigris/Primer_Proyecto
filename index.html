@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--es recomendable llamar index al archivo principal para que lo reconozca el servidor-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Viewport para el uso de la web en distintos dispositivos-->
+    <meta name="description" content="Primer portal de pruebas de Víctor Santander Arrúa">
+    <!--La descripcion que aparece en google, por ejemplo-->
+    <title>Mi primer ejercicio</title>
+    <link rel="stylesheet" href="./estiloNormalizad/normalizado.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/mamita.png">
+</head>
+<body>
+<header>
+    <img src="img/mamita.png" width="100" height="100" class="caca" alt="Logo de Víctor">
+    <h1 id="top" class="caca center bold">Bienvenidos al portal de Víctor</h1>
+</header><br>
+<nav id="navigation">
+    <a href="index.html">Inicio</a>
+    <a href="./links/contacto1/contacto.html">Mi amigo Sucutrucu</a>
+    <a href="./links/contacto2/contacto2.html">Mi Blog personal</a>
+    <a href="./links/qr/sample.html">Pruebas con QR</a>
+    <a href="./links/JavaScriptPruebas/js.html">Pruebas JS</a>
+</nav><br>
+<fieldset class="login">
+<legend>Ingresa</legend><br>
+    <div>
+        <form>
+            <div>
+                <label>
+                    Blogger:
+                    <input name="username" type="text">
+                </label>
+            </div><br>
+            <div>
+                <label>
+                    Contraseña:
+                    <input name="password" type="password">
+                </label>
+            </div><br>
+            <input type="submit" value="Iniciar sesión">
+        </form><br>
+        <a href="./links/registro/registro.html">¿No tienes una cuenta aún? Regístrate aquí.</a>
+    </div>
+</fieldset>
+    <div>
+        <ul>
+            <li><a href="./links/tablaH/tablaH.html">Horario de los cursos.</a></li>
+            <li class="infoView"><a href="./links/tutoriales/tutoriales.html">Tutoriales</a>
+                <ul class="infoHid">
+                    <li class="subMenuView1">Editores de texto
+                        <ul class="subMenuHide1">
+                            <li><a href="./links/tutoriales/individuales/tutoEditores/tutoVisual/tutoVisual.html" 
+                                target="_blank">Tutorial VSC</a></li>
+                            <li><a href="./links/tutoriales/individuales/tutoEditores/tutoSublime/tutoSublime.html"
+                                target="_blank">Tutorial ST</a></li>
+                        </ul>
+                    </li>
+                    <li class="subMenuView2">Hostings
+                        <ul class="subMenuHide2">
+                            <li>Tutorial nº 3</li>
+                            <li>Tutorial nº 4</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <button class="great" id="premium">Hazte Premium</button>
+    </div>
+    <dialog class="popUp" id="premiummes">
+        <h2>Hazte ProBlogger</h2>
+        <ul>
+            <li>Páginas <strong>ilimitadas</strong></li>
+            <li>Imágenes <strong>ilimitadas</strong></li>
+            <li>Servicio intranet <strong>personalizado</strong>
+                <ul>
+                    <li><strong>Por tan solo 5 euros al mes</strong></li>
+                </ul>
+            </li><br>
+            <button class="close" id="close"> X </button>
+        </ul>
+    </dialog>
+<p>Aquí iré subiendo los avances en la creación de mi blog y en el estudio de los lenguajes, día tras día. 
+    <br>No olvides pasarte por los <a href="./links/tutoriales/tutoriales.html">tutoriales</a> para ir viendo el comienzo en vídeo.</p>
+<ol>
+    <!--Con ALT SHIFT flecha abajo multiplico ultima linea-->
+    <details>
+        <summary><a href="#1">Primer día</a></summary>
+        
+            <p><a href="#1.1">Feliz comienzo</a></p>
+            <p><a href="#1.2">Empezando</a></p>
+    </details><br>
+    <details>
+        <summary><a href="#2">Segundo día</a></summary>
+        
+            <p><a href="#2.1">Esto se está complicando</a></p>
+            <p><a href="#2.2">Vemos nuestro primer código</a></p>
+    </details><br>
+    <details>
+        <summary><a href="#3">Tercer día</a></summary>
+        
+            <p><a href="#3.1">Mejoramos nuestro primer ejercicio</a></p>
+            <p><a href="#3.2">Vemos mejorar nuestro primer código</a></p>
+    </details>
+</ol>
+<article>
+    <section>
+        <h2 id="1">Primer día</h2>
+        <p>Por fin hemos empezado. <br> Un comienzo un poco raro para ser la primera entrada de este cuaderno de vitácora, ¿no?. 
+        No lo sería tanto si supieran todo lo que hay detrás, pues resulta que no es la primera vez que intento empezar un proyecto como este, no.
+        Ya he perdido la cuenta para serles sincero.<br>Pero el pasado pasado es. Esta vez parece ir todo mucho más encaminado que las otras veces. 
+        <br> Veamos qué hemos conseguido por el momento:
+        </p>
+    <dl>
+        <dt><b>Un curso gratuito</b></dt>
+        <dd>|edTeam|</dd>
+        <br>
+        <dd>Lo más importante para empezar es una buena guía, y si es gratuita mejor que mejor.</dd>
+        <br>
+        <dt><b>Un buen editor de texto</b></dt>
+        <dd>|Visual Studio Code|</dd>
+        <br>
+        <dd>Un programa sencillo (aunque difícil de dominar) para comenzar a echar código.</dd>
+        <br>
+        <dt><b>Un generador de servidor</b></dt>
+        <dd>|Prepros|</dd>
+        <br>
+        <dd>Este tipo de programa nos facilitará la compresión de nuestro trabajo haciendo ver el resultado final de cada uno de nuestros cambios.</dd>
+    </dl>
+        <h3 id="1.1">Feliz comienzo</h3>
+        <a href="#top">Ir al comienzo</a>
+        <p>Con todo el material para comenzar preparado, iniciamos sesión en edTeam y nos ponemos directamente con los cursos.
+            <br>Lo recomendado, a la hora de aprender <strong>desarrollo web</strong> es conocer el tipo de estructura interna que vamos a manejar:
+            <br>
+            <dl>
+                <dt><b>HTML</b></dt>
+                <dd>La estructura base de todo sitio web está escrita en HTML, que es un lenguaje de marcado.</dd><br>
+                <a href="https://es.wikipedia.org/wiki/HTML" target="_blank">Wiki te lo explica</a>
+                <br><br>
+                <dt><b>CSS</b></dt>
+                <dd>Este tipo de archico,(.css) definirá el estilo o aspecto que tendrá nuestro sitio web. Es un paquete de estilo en cascada.</dd><br>
+                <a href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada" target="_blank">Wiki te lo explica</a><br>
+                <br>
+                <dt><b>JavaScript</b></dt>
+                <dd>Este será el archivo que controlará las funciones internas del sitio. Este es el único lenguaje de 
+                    programación propiamente dicho que vamos a manejar.</dd><br>
+                <a href="https://es.wikipedia.org/wiki/JavaScript" target="_blank">Wiki te lo explica</a>
+            </dl>
+        </p>
+    </section>
+</article>
+
+<div data-role="content">
+<form>
+<textarea name="msg" rows="10" cols="40">Texto a codificar</textarea><br> 
+<input type="button" value="Generar" onclick="update_qrcode()">
+</form>
+<div id="qr"></div>
+</div>
+
+<aside>
+    <fieldset>
+        <form>
+            <label for="comenta">Comentame lo que quieras:</label><br><br>
+            <textarea class="textarea" name="comment" id="" cols="40" rows="7" placeholder="Hola Bloggers..."></textarea>
+            <button class="great">Enviar</button>
+        </form>
+    </fieldset>
+</aside>
+<footer>
+    <p class="center">Sígueme en mis redes sociales:</p>
+    <p class="right">Creador: Víctor Conchudo</p>
+</footer>
+
+    <script src="cambioColor.js"></script>
+    <!--Los scripts se recomiendan colocar al final del body-->
+</body>
+</html>

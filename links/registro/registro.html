@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro para el Blog de Víctor</title>
+    <link rel="stylesheet" href="../../estiloNormalizad/normalizado.css">
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <h1><strong>Regístrate</strong></h1>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Tus datos personales</legend><br>
+                <div>
+                    <label>
+                        Nombres:
+                        <input name="fname" type="text">
+                    </label>
+                </div><br>
+                <div>
+                    <label>
+                        Apellidos:
+                        <input name="lname" type="text">
+                    </label>
+                </div><br>
+                <div>
+                    <label>
+                        Fecha de nacimiento:
+                        <input name="birthday" type="date">
+                    </label>
+                </div><br>
+                <div>
+                    <label>
+                        Ingresa un correo electrónico(*):
+                        <input name="email" type="email" required>
+                    </label>
+                </div><br>
+                <div>
+                    <label>
+                        Ingresa una contraseña(*):
+                        <input name="password" type="password" required>
+                    </label>
+                </div><br>
+            </fieldset>
+            <fieldset>
+                <legend>Cómo te verán los demás</legend><br>
+                <div>
+                    <label>
+                        Tu nombre de Blogger(*):
+                        <input name="username" type="text" required>
+                    </label>
+                </div><br>
+                <div>
+                    <label>
+                        Tus lenguajes preferidos:
+                        <input type="checkbox">HTML
+                        <input type="checkbox">JavaScript
+                        <input type="checkbox">CSS
+                        <input type="checkbox">Python
+                    </label>
+                </div><br>
+                <div>
+                    <label>
+                        Desde qué país posteas:
+                        <select name="country">
+                            <option value=""></option>
+                            <optgroup label="América">
+                                <option value="ar">Argentina</option>
+                                <option value="br">Brasil</option>
+                                <option value="co">Colombia</option>
+                                <option value="us">Estados Unidos</option>
+                            </optgroup>
+                            <optgroup label="Europa">
+                                <option value="es">España</option>
+                                <option value="it">Italia</option>
+                                <option value="uk">Reino Unido</option>
+                                <option value="fr">Francia</option>
+                            </optgroup>
+                        </select>
+                    </label>
+                </div><br>
+            </fieldset>
+            <p>(*)Estos campos son obligatorios</p>
+            <input type="submit" value="Registrarse">
+        </form>
+    </div><br>
+    <footer>
+        <a href="../../index.html">Inicio</a>
+    </footer>
+    <script src="registro.js"></script>
+</body>
+</html>

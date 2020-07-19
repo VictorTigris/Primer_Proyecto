@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Utf-8">
+    <script type="text/javascript" src="qrcode.js"></script>
+    <!-- SJIS Support (optional) -->
+    <script type="text/javascript" src="qrcode_SJIS.js"></script>
+<!--
+    <script type="text/javascript" src="qrcode_SJIS.js"></script>
+-->
+    <!-- Uncomment to encode string in qrcode as UTF8 (optional) -->
+<!--
+    <script type="text/javascript" src="qrcode_UTF8.js"></script>
+-->
+    <script type="text/javascript" src="sample.js"></script>
+    <link rel="stylesheet" href="sample.css">
+    <title>Hey yu wasap QR</title>
+  </head>
+  <body onload="body_loadHander()">
+    <form name="qrForm">
+      <div id="nDisplay">
+      <span>Tamaño:</span>
+      <select name="t"></select>
+      <span>Densidad:</span>
+      <select name="e">
+        <option value="L">Muy compacto</option>
+        <option value="M" selected="selected">Compacto</option>
+        <option value="Q">Normal</option>
+        <option value="H">Extenso</option>
+      </select>
+      <span>Tipo:</span>
+      <select name="m">
+        <option value="Numeric">Numeric</option>
+        <option value="Alphanumeric">Alphanumeric</option>
+        <option value="Byte" selected>Byte</option>
+        <option value="Kanji">Kanji</option>
+      </select>
+      <span>Lenguaje:</span>
+      <select name="mb">
+        <option value="default">None</option>
+        <option value="SJIS">SJIS</option>
+        <option value="UTF-8" selected>UTF-8</option>
+      </select>
+      </div>
+      <br/>
+      <textarea name="msg" rows="10" cols="40">here comes qr!</textarea>
+      <br/>
+      <br/>
+      <input type="button" value="update" onclick="update_qrcode()"/>
+      <br/>
+      <br/>
+      <div id="qr"></div>
+    </form>
+  </body>
+</html>

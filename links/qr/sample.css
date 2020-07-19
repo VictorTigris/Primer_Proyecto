@@ -1,0 +1,6 @@
+body {
+    background-color: rgba(96, 152, 170, 0.800);
+}
+#nDisplay {
+    display: none;
+}

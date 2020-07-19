@@ -1,0 +1,248 @@
+@font-face {
+    font-family: "Matrix";
+    src: url("../../fonts/matrixFont/8bitOperatorPlus-Regular.ttf");
+}
+body {
+    background-color: rgb(255, 189, 103);
+}
+footer {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px 10px 20px;
+    background-color: black;
+    margin-bottom: 20px;
+    border-radius: 0 5px 5px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a:hover {
+    color: rgb(255, 0, 0);
+}
+.pepe {
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.playBox {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+}
+#decoration {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 550px;
+    background-color: black;
+}
+#title {
+    background-color: black;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+                                      /*SECCIÓN SLIDE*/
+
+#slide {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    transition: 3000ms;
+}
+#tiger {
+    position: absolute;
+    top: 220px;
+    left: 637.5px;
+}
+
+                                      /*SECCIÓN SLIDE*/
+                                      /*SECCIÓN MATRIX*/
+
+#cover {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+#playMe {
+    border: none;
+    background-color: rgb(0, 158, 40);
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Matrix";
+    position: absolute;
+    top: 300px;
+    left: 613.5px;
+    font-size: 30px;
+}
+#playMe:hover {
+    color: white;
+}
+#hello {
+    z-index: 2;
+    color: white;
+    font-family: "Matrix";
+    color: rgb(0, 158, 40);
+}
+
+                                      /*SECCIÓN MATRIX*/
+                                      /*SECCIÓN RANDOM*/
+
+#randomNum {
+    position: absolute;
+    left: 100px;
+    top: 180px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    border-radius: 10px;
+    padding: 60px 5px 5px 5px;
+}
+#randomButton {
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#randomButton:hover {
+    color: red;
+}
+
+                                      /*SECCIÓN RANDOM*/
+                                      /*SECCIÓN SECRET*/
+
+#secretNum {
+    position: absolute;
+    top: 180px;
+    right: 100px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    border-radius: 10px;
+    padding: 60px 5px 5px 5px;
+}
+#secretButton {
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#secretButton:hover {
+    color: red;
+}
+#secret {
+    width: 107px;
+}
+
+                                      /*SECCIÓN SECRET*/
+                                      /*SECCIÓN DANGER*/
+
+#danger {
+    position: absolute;
+    left: 100px;
+    top: 500px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    border-radius: 10px;
+    padding: 60px 5px 5px 5px;
+}
+#dangerButton {
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#dangerButton:hover {
+    color: red;
+}
+#dangerSecret {
+    position: absolute;
+    right: -70px;
+    color: rgb(255, 189, 103);
+}
+#tip {
+    position: relative;
+    top: 160px;
+    color: rgb(44, 44, 44);
+}
+#tip:hover {
+    color: white;
+}   
+#dangerWord {
+    width: 163px;
+    text-align: center;
+}
+.matrix {
+    font-family: "Matrix";
+    color: rgb(0, 158, 40);
+}
+#green {
+    color: rgb(0, 158, 40);
+    font-size: 25px;
+    font-weight: bold;
+}
+.intruser {
+    color: white;
+    text-align: right;
+}
+.exhaustive {
+    color: red;
+}
+.salvator {
+    color: rgb(243, 227, 10);
+}
+#timerBox {
+    background-color: red;
+    display: none;
+    position: absolute;
+    width: 600px;
+    height: 800px;
+    top: 40px;
+    left: 377.5px;
+    background-image: url(../../gifs/antivirus.gif);
+    background-size: contain;
+}
+#timer {
+    background-color: rgba(255, 255, 0, 0.897);
+    position: relative;
+    top: 280px;
+    text-align: center;
+    color: black;
+    font-family: "Matrix";
+    font-size: 30px;
+}
+#escape {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+#ultimatum {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
